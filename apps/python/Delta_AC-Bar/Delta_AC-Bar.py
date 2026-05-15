@@ -7,7 +7,7 @@ APP_NAME = "Delta AC Bar"
 
 # Visual constants
 HEIGHT_PX = 10
-WIDTH_RATIO = 0.60  # 60% of screen width
+WIDTH_RATIO = 1.0  # 100% of screen width
 BACKGROUND = (0.05, 0.05, 0.05, 0.65)
 PROGRESS_COLOR = (1.0, 1.0, 1.0, 0.18)
 FLASH_COLOR = (1.0, 1.0, 1.0, 0.45)
@@ -63,7 +63,7 @@ def update_geometry():
         cached_res = res
     w = int(res[0] * WIDTH_RATIO)
     h = HEIGHT_PX
-    x = int((res[0] - w) * 0.5)
+    x = 0
     y = 0
     bar_rect = (x, y, w, h)
     if app:
